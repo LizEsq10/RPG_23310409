@@ -20,12 +20,16 @@ int Character::getHealth() {
     return health;
 }
 
+int Character::getInihealth(){
+    return Inihealth;
+}
+
 int Character::getAttack() {
     return attack;
 }
 
-int Character::getDefense() {
-    return defense;
+double Character::getDefense() {
+    return isDefending ? defense * 1.20 : defense;
 }
 
 int Character::getSpeed() {
@@ -45,5 +49,9 @@ bool Character::flee(Character*target) {
         return true;
 
     int chance = rand() % 100;
-    return chance > 30;
+    return chance > 40;
+}
+
+void Character::Defense(){
+    isDefending = true;
 }
