@@ -17,11 +17,12 @@ void Player::doAttack(Character *target) {
 }
 
 void Player::takeDamage(int damage) {
-    int trueDamage = damage - defense;
+    int trueDamage = damage - getDefense();
 
     health-= trueDamage;
 
     cout << name << " took " << trueDamage << " damage!" << endl;
+    cout << "remainig health" + to_string(this->getHealth())<<endl;
 
     if(health <= 0) {
         cout << name << " has been defeated!" << endl;
@@ -53,9 +54,11 @@ Character* Player::selectTarget(vector<Enemy*> possibleTargets) {
 }
 
 Action Player::takeAction(vector<Enemy*> enemies) {
+    isDefending = false;
     int action = 0;
     cout << "Select an action: " << endl
-    << "1. Attack" << endl;
+    << "1. Attack" << endl
+    << "2. Defend" << endl;
 
     //TODO: Validate input
     cin >> action;
@@ -70,6 +73,15 @@ Action Player::takeAction(vector<Enemy*> enemies) {
                 doAttack(target);
             };
             currentAction.speed = getSpeed();
+            break;
+
+        case 2:
+            currentAction.target = nullptr;
+            currentAction.action = [this]() {
+                Defense();
+                cout << "defense has been activated" <<endl;
+            };
+            currentAction.speed = 999999;
             break;
         default:
             cout << "Invalid action" << endl;
