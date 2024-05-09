@@ -17,10 +17,13 @@ class Player: public Character {
 private:
     int level;
     int experience;
+    int originalDefense;
+    Enemy* enemyselect;
+
 
     void levelUp();
 public:
-    Player(string _name, int _health, int _attack, int _defense, int _speed);
+    Player(const char _name[], int _health, int _attack, int _defense, int _speed);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     Character* selectTarget(vector<Enemy*> possibleTargets);
@@ -29,6 +32,10 @@ public:
     void gainExperience(int exp);
 
     //TODO: Implement use object
+
+    void setSelectedEnemy(Enemy* enemy) {
+        enemyselect = enemy;
+    }
 };
 
 

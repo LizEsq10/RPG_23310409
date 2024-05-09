@@ -15,6 +15,8 @@ private:
     vector<Character*> participants;
     vector<Player*> partyMembers;
     vector<Enemy*> enemies;
+    Enemy* enemyselect;
+
     priority_queue<Action> actionQueue;
     void registerActions(vector<Character*>::iterator participant);
     void executeActions(vector<Character*>::iterator participant);
@@ -26,9 +28,10 @@ public:
     Combat(vector<Character*> _participants);
     Combat(vector<Player*> _partyMembers, vector<Enemy*> _enemies);
     Combat();
+    void chooseEnemy();
     void doCombat();
     void addParticipant(Character *participant);
-    string toString();
+    char* toString();
 };
 
 
