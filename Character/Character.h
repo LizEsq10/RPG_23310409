@@ -20,7 +20,7 @@ protected:
     bool isPlayer;
     bool isDefending;
 public:
-    Character(const char _name[], int _health, int _attack, int _defense, int _speed, bool _isPlayer);
+    Character(char* _name, int _health, int _attack, int _defense, int _speed, bool _isPlayer);
 
     virtual void doAttack(Character *target) = 0;
     virtual void takeDamage(int damage) = 0;
@@ -30,7 +30,7 @@ public:
     void Defense();
 
     bool flee(Character* target);
-    string getName();
+    char* getName();
     int getHealth();
     int getInihealth();
     int getAttack();

@@ -11,7 +11,7 @@ using namespace std;
 using namespace combat_utils;
 
 
-Enemy::Enemy( const char _name[], int _health, int _attack, int _defense, int _speed, int _experience) : Character(_name, _health, _attack, _defense, _speed, false) {
+Enemy::Enemy(char* _name, int _health, int _attack, int _defense, int _speed, int _experience) : Character(_name, _health, _attack, _defense, _speed, false) {
     experience = _experience;
 }
 
@@ -30,7 +30,7 @@ void Enemy::takeDamage(int damage) {
 }
 
 int Enemy::getExperience() const {
-    cout << "experience gained in this combat " << experience <<endl;
+    cout << "Experiencia obtenida en este combate: " << experience <<endl;
     return experience;
 }
 

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-Player::Player(const char _name[], int _health, int _attack, int _defense, int _speed) : Character(_name, _health, _attack, _defense, _speed, true) {
+Player::Player(char* _name, int _health, int _attack, int _defense, int _speed) : Character(_name, _health, _attack, _defense, _speed, true) {
     level = 1;
     experience = 0;
     originalDefense = _defense;
@@ -25,8 +25,8 @@ void Player::takeDamage(int damage) {
 
     health-= trueDamage;
 
-    cout << name << " took " << trueDamage << " damage!" << endl;
-    cout << "remainig health" + to_string(this->getHealth())<<endl;
+    cout << name << " took: " << trueDamage << " damage!" << endl;
+    cout << "Remainig health: " + to_string(this->getHealth())<<endl;
 
     if(health <= 0) {
         cout << name << " has been defeated!" << endl;
@@ -35,41 +35,48 @@ void Player::takeDamage(int damage) {
 
 void Player::levelUp() {
     level++;
-    int ExperienciaRequerida = 10;
+    health += 10;
+    attack += 10;
+    defense += 10;
+    speed += 10;
 
-    experience -= ExperienciaRequerida;
+    cout << name << " ha subido al nivel " << level << endl;
+    cout << "Estadisticas: " <<  endl;
+    cout << "Salud: " << health << ", Ataque: " << attack << ", Defensa: " << defense << ", Velocidad: " << speed << endl;
 
-    health += 5;
-    attack += 5;
-    defense += 5;
-    speed += 5;
-    cout << name << " ha subido al nivel " << level << "!" << endl;
-    cout << "Nuevas estadísticas: Salud: " << health << ", Ataque: " << attack << ", Defensa: " << defense << ", Velocidad: " << speed << endl;
-    cout << "Nivel de experiencia actual: " << experience << endl;
 
-    if (experience >= ExperienciaRequerida) {
-        cout << "Tienes experiencia para subir de nivel" << endl;
-        levelUp();
-    }
 }
 
 void Player::gainExperience(int exp) {
     experience += exp;
-    int ExperienciaRequerida = 10;
-    if (experience >= ExperienciaRequerida) {
+    if (experience >= 100) {
+        experience = experience - 100;
         levelUp();
+        cout << "Experiencia restante: " << experience << endl;
     }
+
 }
 
 Character* Player::selectTarget(vector<Enemy*> possibleTargets) {
     int selectedTarget = 0;
-    cout << "Select a target: " << endl;
-    for (int i = 0; i < possibleTargets.size(); i++) {
-        cout << i << ". " << possibleTargets[i]->getName() << endl;
-    }
-
-    //TODO: Add input validation
-    cin >> selectedTarget;
+    bool invalid = true;
+    do {
+        cout << "-------------------------------" << endl;
+        cout << "Select a target: " << endl;
+        for (int i = 0; i < possibleTargets.size(); i++) {
+            cout << i << ". " << possibleTargets[i]->getName() << endl;
+        }
+        cin >> selectedTarget;
+        for (int i = 0; i < possibleTargets.size(); i++) {
+            if (selectedTarget == i) {
+                invalid = false;
+                break;
+            }
+        }
+        if (invalid) {
+            cout << "Invalid option" << endl;
+        }
+    } while (invalid);
     return possibleTargets[selectedTarget];
 }
 
@@ -81,41 +88,29 @@ Action Player::takeAction(vector<Enemy*> enemies) {
     cin >> action;
     Action currentAction;
     Character* target = nullptr;
-    int originalDefense = defense;
     switch(action) {
         case 1:
-            // Utilizar al enemigo seleccionado al principio del combate como objetivo
-            if (!enemies.empty()) {
-                target = enemyselect;
-            } else {
-                cout << "No hay enemigos disponibles." << endl;
-                currentAction.action = nullptr;
-                return currentAction;
-            }
-            currentAction.target = target;
-            currentAction.action = [this, target](){
-                doAttack(target);
-            };
-            currentAction.speed = getSpeed();
-            break;
-        case 2:
-            Defense();
+            target = selectTarget(enemies);
+        currentAction.target = target;
+        currentAction.action = [this, target](){
+            doAttack(target);
+            if (target -> getHealth() <= 0)
+            {
+                int experienciaObtenida = (((Enemy *) target) -> getExperience());
+                gainExperience(experienciaObtenida);
 
-            if (!enemies.empty()) {
-                target = enemies[0];
             }
-            if (target) {
-                currentAction.target = target;
-                currentAction.action = [this, target, originalDefense](){
-                    // Restablecer la defensa al valor original después de defenderse
-                    defense = originalDefense;
-                };
-                currentAction.speed = target->getSpeed();
-            } else {
-                cout << "No hay enemigos disponibles." << endl;
-                currentAction.action = nullptr;
-            }
-            break;
+        };
+        currentAction.speed = getSpeed();
+        break;
+        case 2:
+            currentAction.target = target;
+        currentAction.action = [this]()
+        {
+            Defense();
+        };
+        currentAction.speed = 999999;
+        break;
         default:
             cout << "Invalid action" << endl;
             currentAction.action = nullptr;

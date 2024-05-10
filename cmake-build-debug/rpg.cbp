@@ -8,117 +8,117 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug"/>
+				<Option working_dir="C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rpg">
-				<Option output="C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/rpg.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug"/>
+				<Option output="C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/rpg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpg"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpg"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rpg/fast">
-				<Option output="C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/rpg.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug"/>
+				<Option output="C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/rpg.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
-					<Add directory="C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpg/fast"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpg/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug"/>
+				<Option working_dir="C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug"/>
+				<Option working_dir="C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Lizy0/CLionProjects/Proyec_RPG/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/cbeww/CLionProjects/RPG_23310409/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Character/Character.cpp">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Character/Character.cpp">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Character/Character.h">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Character/Character.h">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Combat/Action.cpp">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Combat/Action.cpp">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Combat/Action.h">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Combat/Action.h">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Combat/Combat.cpp">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Combat/Combat.cpp">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Combat/Combat.h">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Combat/Combat.h">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Enemy/Enemy.cpp">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Enemy/Enemy.cpp">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Enemy/Enemy.h">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Enemy/Enemy.h">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Player/Player.cpp">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Player/Player.cpp">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Player/Player.h">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Player/Player.h">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/Utils.h">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/Utils.h">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/main.cpp">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/main.cpp">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/Lizy0/CLionProjects/Proyec_RPG/CMakeLists.txt">
+		<Unit filename="C:/Users/cbeww/CLionProjects/RPG_23310409/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
